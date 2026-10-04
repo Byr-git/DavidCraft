@@ -1,11 +1,11 @@
 const music = document.getElementById("bgMusic");
 
 const TRACKS = {
-    normal: "../assets/musica.mp3",
-    confesion: "../assets/musica-confesion.mp3",
-    cofre: "../assets/musica-cofre.mp3",
-    explosion: "../assets/musica-explosion.mp3",
-    logro: "../assets/musica-logro.mp3"
+    normal: "assets/musica.mp3",
+    confesion: "assets/musica-confesion.mp3",
+    cofre: "assets/musica-cofre.mp3",
+    explosion: "assets/musica-explosion.mp3",
+    logro: "assets/musica-logro.mp3"
 };
 
 let currentTrack = null;
