@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servidor de David | elochinopro23</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="particles"></div>
+
+    <main>
+        <section id="startScreen" class="screen start-screen">
+            <div class="server-logo">
+                <div class="grass-block"></div>
+                <h1>DAVIDCRAFT</h1>
+                <p class="subtitle">Servidor privado • Cumpleaños 2026</p>
+            </div>
+
+            <div class="loading-box">
+                <p id="loadingText">Generando mundo...</p>
+                <div class="progress"><div id="progressBar"></div></div>
+            </div>
+
+            <button id="startButton" class="mc-button">ENTRAR AL SERVIDOR</button>
+            <p class="tiny">Versión: elochinopro23-22.0</p>
+        </section>
+
+        <section id="game" class="hidden">
+            <header class="topbar">
+                <div>DAVIDCRAFT</div>
+                <div id="clock">DÍA 22</div>
+                <div>❤️❤️❤️❤️❤️❤️</div>
+            </header>
+
+            <section class="hero">
+                <div class="cloud cloud1"></div>
+                <div class="cloud cloud2"></div>
+
+                <div class="hero-content">
+                    <p class="warning">EVENTO ESPECIAL DETECTADO</p>
+                    <h2>¡FELIZ CUMPLEAÑOS, DAVID!</h2>
+                    <p class="nickname">player: <strong>elochinopro23</strong></p>
+
+                    <div class="player-card">
+                        <img class="avatar" src="/assets/skin-head.png" alt="elochinopro23">
+                        <div class="player-card-items">
+                            <p><strong>Jugador:</strong> David</p>
+                            <p><strong>Edad:</strong> 22 años</p>
+                            <p><strong>Rango:</strong> Ingeñero</p>
+                            <p><strong>Reputación:</strong></p>
+                            <p class="bad">SOSPECHOSA</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="stats">
+                <h2>📊 ESTADÍSTICAS DEL JUGADOR</h2>
+                <div class="stat-grid">
+                    <article class="stat">
+                        <span class="icon">🪽</span>
+                        <b>Vuelo ilegal</b>
+                        <strong>∞</strong>
+                        <small>Creative en Survival</small>
+                    </article>
+                    <article class="stat">
+                        <span class="icon">🧱</span>
+                        <b>Bloques sacados del creativo</b>
+                        <strong>999+</strong>
+                        <small>"Es solo decoración"</small>
+                    </article>
+                    <article class="stat">
+                        <span class="icon">🐀</span>
+                        <b>Nivel de rata</b>
+                        <strong>MAX</strong>
+                        <small>Logro permanente</small>
+                    </article>
+                    <article class="stat">
+                        <span class="icon">🎂</span>
+                        <b>Edad desbloqueada</b>
+                        <strong>22</strong>
+                        <small>+1 año de experiencia</small>
+                    </article>
+                </div>
+            </section>
+
+            <section class="incident">
+                <div class="subtitulo">
+                    <span>🚨</span>
+                    <h2>REPORTE DE ADMINISTRACIÓN</h2>
+                </div>
+                <div class="incident-contenedor">
+                    <img class="elochinopro23-skin" src="/assets/skin.png" alt="elochinopro23">
+                    <div>
+                        <p>El jugador <strong>elochinopro23</strong> ha sido detectado volando en Survival.</p>
+                        <p>También se encontraron objetos provenientes del modo Creativo.</p>
+                        <p class="quote">"Nadie se va a dar cuenta."</p>
+                        <button id="ratButton" class="mc-button small">CONFESAR DELITO</button>
+                        <p id="ratResult" class="result"></p>
+                    </div>                    
+                </div>
+            </section>
+
+            <section class="achievements">
+                <h2>🏆 LOGROS DESBLOQUEADOS</h2>
+                <div class="achievement-grid">
+                    <button class="achievement" data-msg="Ha conseguido algo imposible: usar Creative sin admitir que usa Creative.">
+                        🏆 <b>Ingeniero de la trampa</b><small>Manipula las reglas</small>
+                    </button>
+                    <button class="achievement" data-msg="Encontró la tecla de vuelo en menos de 0.3 segundos. Sospechoso.">
+                        🪽 <b>Ángel del Survival</b><small>Las leyes de la gravedad son opcionales</small>
+                    </button>
+                    <button class="achievement" data-msg="Obtuvo 64 bloques que definitivamente no estaban en su inventario.">
+                        💎 <b>Economía creativa</b><small>La economía del servidor está en peligro</small>
+                    </button>
+                    <button class="achievement" data-msg="Sobrevivió 22 años sin que un Creeper le arruine completamente la vida.">
+                        🎂 <b>Sobreviviente 22</b><small>+1 nivel de experiencia</small>
+                    </button>
+                </div>
+                <p id="achievementMessage" class="achievement-message">Haz clic en un logro para inspeccionarlo.</p>
+            </section>
+
+            <section class="chest-section">
+                <h2>🎁 HAS ENCONTRADO UN COFRE</h2>
+                <p>Contiene un objeto extremadamente raro.</p>
+                <button id="chestButton" class="chest">📦</button>
+                <div id="chestContent" class="chest-content hidden">
+                    <div class="diamond">💎</div>
+                    <h3>DIAMANTEEE</h3>
+                    <p>Descripción: un año más de vida.</p>
+                    <p>Durabilidad: <strong>22/22</strong></p>
+                    <p>Efecto: <strong>+100 de chamba</strong></p>
+                    <p class="final-message">David, feliz cumpleaños! Que la pases bien hoy en tu día, no dejes los vicios y deja de usar creativo en Survival.</p>
+                </div>
+            </section>
+
+            <section class="danger">
+                <h2>- BOTÓN ABSOLUTAMENTE NORMAL -</h2>
+                <p>No contiene ninguna explosión.</p>
+                <button id="dangerButton" class="mc-button danger-button">NO PULSAR</button>
+                <div id="dangerResult"></div>
+            </section>
+
+            <footer>
+                <p>Servidor creado por joda para <strong>elochinopro23</strong></p>
+                <p>© 2026 • No se aceptan devoluciones de diamantes robados del creativo.</p>
+            </footer>
+        </section>
+    </main>
+
+    <audio id="bgMusic">
+        <source src="assets/musica.mp3" type="audio/mpeg">
+    </audio>
+
+    <div id="toast"></div>
+    <script src="script.js"></script>
+</body>
+</html>
